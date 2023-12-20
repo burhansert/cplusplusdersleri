@@ -1,0 +1,1 @@
+C++ için kısa notlar
