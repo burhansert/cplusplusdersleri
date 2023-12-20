@@ -18,6 +18,7 @@ public:
         cout << "Matematik Ogretmeni" << endl;
     }
 };
+
 int main(void)
 {
     MatematikOgretmeni o1, o2;
@@ -25,3 +26,6 @@ int main(void)
     o2.Ogretmen::brans();
     return 0;
 }
+
+
+

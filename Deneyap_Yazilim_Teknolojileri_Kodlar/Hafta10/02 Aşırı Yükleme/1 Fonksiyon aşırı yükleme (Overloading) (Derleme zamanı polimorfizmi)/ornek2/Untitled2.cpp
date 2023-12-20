@@ -1,4 +1,4 @@
-//Farklý parametre türü kullanarak fonksiyon aþýrý yükleme.
+//Farkli parametre türü kullanarak fonksiyon asiri yukleme.
 
 #include <iostream>
 using namespace std;
@@ -21,9 +21,9 @@ public:
 
 int main()
 {
-    asiriYukleme ornek;
-    ornek.yaz(45);
-    ornek.yaz(34.78);
-    ornek.yaz('A');
+    asiriYukleme asiriYukleme1;
+    asiriYukleme1.yaz(45);
+    asiriYukleme1.yaz(34.78);
+    asiriYukleme1.yaz('A');
     return 0;
 }
