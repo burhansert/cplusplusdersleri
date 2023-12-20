@@ -1,33 +1,44 @@
 #include <iostream>
 using namespace std;
 
-class Hayvan {
-    public:
-        void yeme()
-        {
-            cout << "Yemek yiyebilirim.." << endl;
-        }
+class Cokgen
+{
+protected:
+    int genislik, yukseklik;
+public:
+    void degerAta(int g, int y)
+    {
+        genislik = g;
+        yukseklik = y;
+    }
 
-        void uyuma()
-        {
-            cout << "Uyuyabilirim.." << endl;
-        }
 };
 
-class Kopek : public Hayvan {
-    public:
-        void havlama()
-        {
-            cout << "Havlayabilirim.. Hav hav!!" << endl;
-        }
+class Dikdortgen: public Cokgen
+{
+public:
+    int alan()
+    {
+        return (genislik * yukseklik);
+    }
+};
+
+class Ucgen : public Cokgen
+{
+public:
+    int alan()
+    {
+        return ((genislik * yukseklik)/2);
+    }
 };
 
 int main()
 {
-    Kopek kopek1;
-    kopek1.yeme();
-    kopek1.uyuma();
-    kopek1.havlama();
-
-    return 0;
+    Dikdortgen dik;
+    Ucgen ucg;
+    dik.degerAta(4, 5);
+    ucg.degerAta(4, 5);
+    cout << "Dikdorgen Alani: " << dik.alan() << endl;
+    cout << "Ucgen Alani: " << ucg.alan() << endl;
+    return 0 ;
 }
