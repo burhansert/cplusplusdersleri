@@ -1,11 +1,12 @@
-//Farklý parametre sayýsý kullanarak fonksiyon aþýrý yükleme.
+//Farkli parametre sayisi kullanarak fonksiyon asiri yukleme.
 
 #include <iostream>
 using namespace std;
 class Topla
 {
 public:
-    int ekle(int a,int b){
+    int ekle(int a,int b)
+    {
         return a + b;
     }
 
@@ -15,9 +16,10 @@ public:
     }
 };
 
-int main(void) {
-Topla f;
-cout << f.ekle(21, 13) << endl;
-cout << f.ekle(21, 13, 30) << endl;
-return 0;
+int main(void)
+{
+    Topla topla1;
+    cout << topla1.ekle(21, 13) << endl;
+    cout << topla1.ekle(21, 13, 30) << endl;
+    return 0;
 }
