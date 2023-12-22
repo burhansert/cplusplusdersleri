@@ -9,7 +9,6 @@ int main()
     ifstream dosya("sayilar.txt");
     string satir;
     if(dosya.is_open())
-
     {
         cout << "Sayilar:"<<endl;
         while(getline(dosya,satir))

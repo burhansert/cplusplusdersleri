@@ -15,6 +15,7 @@ int main()
             karakter = rand() % 255;
         }
         while(!isalnum(karakter));
+
         sifre[i] = karakter;
     }
     sifre[karakterSayisi] = '\0';

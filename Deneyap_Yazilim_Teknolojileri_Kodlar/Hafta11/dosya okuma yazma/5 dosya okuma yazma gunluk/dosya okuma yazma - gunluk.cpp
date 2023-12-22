@@ -39,4 +39,5 @@ int main()
         dosya << satir <<endl;
         dosya.close();
     }
+    system("PAUSE");
 }
